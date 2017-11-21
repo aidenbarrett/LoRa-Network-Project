@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_rules"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_orange"
+    tools:context="com.aidenbarrett.lora_network_app.LoraHomeActivity">
+    <!--Display Home Banner-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="235dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/lora" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="16dp">
+        <!--Display Button for Starting Quiz-->
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gradient_orange"
+            android:orientation="vertical">
+            <!-- @+id/start this id is what is used to reference to its activity.java through the R file. -->
+            <Button
+                android:id="@+id/sensor_info"
+                style="?borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/screen_rotation"
+                android:padding="16dp"
+                android:text="Sensor Data"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/node_control"
+                style="?borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/led_outline"
+                android:padding="16dp"
+                android:text="Node Control"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/weather_data"
+                style="?borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/weather_partlycloudy"
+                android:padding="16dp"
+                android:text="Weather Data"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

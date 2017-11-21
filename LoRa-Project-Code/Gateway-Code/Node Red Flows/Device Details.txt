@@ -1,0 +1,6 @@
+
+Organization ID e3h9r8
+Device Type RP3
+Device ID RP3_D1
+Authentication Method token
+Authentication Token RP3_D1_PWD

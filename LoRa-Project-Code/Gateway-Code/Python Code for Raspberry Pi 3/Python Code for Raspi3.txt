@@ -1,0 +1,11 @@
+
+$sudo apt-get update
+$sudo apt-get upgrade
+$sudo apt-get install python
+$sudo apt-get install mosquitto
+$sudo apt-get install mosquitto-clients
+
+[Copy the loraMaster_v0.3.py to HOME folder]
+
+$sudo chmod 755 loraMaster_v0.3.py
+$python3 loraMaster_v0.3.py

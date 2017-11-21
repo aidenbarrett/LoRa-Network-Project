@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lora Network App</string>
+
+    <string name="main">Current Location</string>
+    <string name="dublin">Dublin</string>
+    <string name="donegal">Donegal</string>
+</resources>

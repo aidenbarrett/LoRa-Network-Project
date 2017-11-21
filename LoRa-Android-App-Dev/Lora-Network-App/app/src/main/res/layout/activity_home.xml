@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rules"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_orange"
+    tools:context="com.aidenbarrett.lora_network_app.HomeActivity">
+    <!--Display Home Banner-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:src="@drawable/weathercheck"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="55dp"
+        android:layout_above="@+id/cardView"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Data"
+        android:layout_marginTop="22dp"
+        android:textColor="#404040"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <!--Display Button for Starting Quiz-->
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_orange"
+            android:orientation="vertical">
+            <!-- @+id/start this id is what is used to reference to its activity.java through the R file. -->
+            <Button
+                android:id="@+id/current_location"
+                style="?borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+
+
+                android:text="Current Location" />
+
+            <Button
+                android:id="@+id/dublin"
+                style="?borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:text="Dublin" />
+
+            <Button
+                android:id="@+id/donegal"
+                style="?borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:text="Donegal" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

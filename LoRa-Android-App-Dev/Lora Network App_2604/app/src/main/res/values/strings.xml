@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lora Network App</string>
+
+    <string name="main">Current Location</string>
+    <string name="dublin">Dublin</string>
+    <string name="donegal">Donegal</string>
+
+    <string name="bluemix_auth">Basic c2NhbGxlZGltcGxhdHRseW1hbGxmYmVlOjdlNDk1ZmQ1YWRiYTQyNjhmNGQ1NWRmNWYyNDA1ZjI2NjM0NDg2YjE=</string>
+    <string name="device_id">RasPi3_S1</string>
+</resources>

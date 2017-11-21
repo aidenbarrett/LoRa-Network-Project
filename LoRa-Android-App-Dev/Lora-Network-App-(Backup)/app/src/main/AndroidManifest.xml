@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.aidenbarrett.lora_network_app">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.aidenbarrett.lora_network_app.LoraHomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.aidenbarrett.lora_network_app.HomeActivity">
+            android:label="@string/home_activity"
+            android:parentActivityName=".LoraHomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aidenbarrett.lora_network_app.LoraHomeActivity"/>
+        </activity>
+        <activity android:name="com.aidenbarrett.lora_network_app.MainActivity">
+            android:label="@string/main_activity"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aidenbarrett.lora_network_app.HomeActivity"/>
+        </activity>
+        <activity android:name="com.aidenbarrett.lora_network_app.Weather_One_Activity">
+            android:label="@string/dublin"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aidenbarrett.lora_network_app.HomeActivity"/>
+        </activity>
+        <activity android:name="com.aidenbarrett.lora_network_app.Weather_Two_Activity">
+            android:label="@string/donegal"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aidenbarrett.lora_network_app.HomeActivity"/>
+        </activity>
+        <activity android:name="com.aidenbarrett.lora_network_app.SensorActivity">
+            android:label="@string/sensor_activity"
+            android:parentActivityName=".LoraHomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aidenbarrett.lora_network_app.LoraHomeActivity"/>
+        </activity>
+        <activity android:name="com.aidenbarrett.lora_network_app.NodeActivity">
+            android:label="@string/node_activity"
+            android:parentActivityName=".LoraHomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aidenbarrett.lora_network_app.LoraHomeActivity"/>
+        </activity>
+    </application>
+
+</manifest>

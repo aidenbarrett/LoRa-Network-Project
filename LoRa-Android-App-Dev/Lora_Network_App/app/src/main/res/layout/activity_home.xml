@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rules"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aidenbarrett.lora_network_app.HomeActivity"
+    android:background="@android:color/holo_green_dark">
+
+    <!--Display Button for Starting Quiz-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout3">
+        <!-- @+id/start this id is what is used to reference to its activity.java through the R file. -->
+        <Button
+            android:id="@+id/current_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Location"
+            android:backgroundTint="@android:color/holo_orange_light" />
+    </LinearLayout>
+
+    <!--Display Home Banner-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="Weather Data"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:textColor="@android:color/holo_orange_light"
+        />
+
+    <Button
+        android:id="@+id/dublin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dublin"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/donegal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donegal"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_below="@+id/dublin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+</RelativeLayout>

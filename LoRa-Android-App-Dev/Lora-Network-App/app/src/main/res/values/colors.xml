@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#228B22</color>
+
+    <color name="darkerColorPrimary">#FF8000</color>
+    <color name="colorPrimary">#009900</color>
+
+    <color name="darkerColorAccent">#FF7800</color>
+    <color name="colorAccent">#FF8000</color>
+
+    <color name="darkerGreenColor">#FF9933</color>
+    <color name="greenColor">#FF8000</color>
+</resources>
+
